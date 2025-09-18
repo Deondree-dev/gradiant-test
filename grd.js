@@ -30,7 +30,7 @@
     }
 
     // === Apply to existing elements ===
-    document.querySelectorAll('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE')
+    document.querySelectorAll('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', ".DLwH4stkW06ZbHFstpq0)
             .forEach(el => applyGradient(el));
 
     // === Observe future elements ===
