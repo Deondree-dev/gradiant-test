@@ -39,12 +39,12 @@
             for (const node of mutation.addedNodes) {
                 if (node.nodeType === Node.ELEMENT_NODE) {
                     // Apply to matches
-                    if (node.matches?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE')) {
+                    if (node.matches?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', ".DLwH4stkW06ZbHFstpq0)) {
                         applyGradient(node);
                     }
 
                     // Check descendants
-                    node.querySelectorAll?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE')
+                    node.querySelectorAll?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', ".DLwH4stkW06ZbHFstpq0)
                         .forEach(el => applyGradient(el));
                 }
             }
