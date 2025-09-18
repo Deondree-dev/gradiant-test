@@ -30,7 +30,7 @@
     }
 
     // === Apply to existing elements ===
-    document.querySelectorAll('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', '.DLwH4stkW06ZbHFstpq0')
+    document.querySelectorAll('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE, .DLwH4stkW06ZbHFstpq0')
             .forEach(el => applyGradient(el));
 
     // === Observe future elements ===
@@ -39,12 +39,12 @@
             for (const node of mutation.addedNodes) {
                 if (node.nodeType === Node.ELEMENT_NODE) {
                     // Apply to matches
-                    if (node.matches?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', '.DLwH4stkW06ZbHFstpq0')) {
+                    if (node.matches?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE, .DLwH4stkW06ZbHFstpq0')) {
                         applyGradient(node);
                     }
 
                     // Check descendants
-                    node.querySelectorAll?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE', '.DLwH4stkW06ZbHFstpq0')
+                    node.querySelectorAll?.('div[data-right-sidebar-hidden], .f9pLH3HRZQxdDLzNqKjE, .DLwH4stkW06ZbHFstpq0')
                         .forEach(el => applyGradient(el));
                 }
             }
